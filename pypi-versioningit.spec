@@ -5,18 +5,18 @@
 # autospec version: v21
 # autospec commit: e36a856
 #
-Name     : versioningit
+Name     : pypi-versioningit
 Version  : 3.1.2
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/5c/9b/941647e9e3616b5da7bbc4601ed9920f44a886704100fa8151406c07c149/versioningit-3.1.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/5c/9b/941647e9e3616b5da7bbc4601ed9920f44a886704100fa8151406c07c149/versioningit-3.1.2.tar.gz
 Summary  : Versioning It with your Version In Git
 Group    : Development/Tools
 License  : MIT
-Requires: versioningit-bin = %{version}-%{release}
-Requires: versioningit-license = %{version}-%{release}
-Requires: versioningit-python = %{version}-%{release}
-Requires: versioningit-python3 = %{version}-%{release}
+Requires: pypi-versioningit-bin = %{version}-%{release}
+Requires: pypi-versioningit-license = %{version}-%{release}
+Requires: pypi-versioningit-python = %{version}-%{release}
+Requires: pypi-versioningit-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 BuildRequires : pypi(hatchling)
 BuildRequires : pypi(py)
@@ -36,40 +36,40 @@ BuildRequires : pypi-virtualenv
 state and is being actively developed.
 
 %package bin
-Summary: bin components for the versioningit package.
+Summary: bin components for the pypi-versioningit package.
 Group: Binaries
-Requires: versioningit-license = %{version}-%{release}
+Requires: pypi-versioningit-license = %{version}-%{release}
 
 %description bin
-bin components for the versioningit package.
+bin components for the pypi-versioningit package.
 
 
 %package license
-Summary: license components for the versioningit package.
+Summary: license components for the pypi-versioningit package.
 Group: Default
 
 %description license
-license components for the versioningit package.
+license components for the pypi-versioningit package.
 
 
 %package python
-Summary: python components for the versioningit package.
+Summary: python components for the pypi-versioningit package.
 Group: Default
-Requires: versioningit-python3 = %{version}-%{release}
+Requires: pypi-versioningit-python3 = %{version}-%{release}
 
 %description python
-python components for the versioningit package.
+python components for the pypi-versioningit package.
 
 
 %package python3
-Summary: python3 components for the versioningit package.
+Summary: python3 components for the pypi-versioningit package.
 Group: Default
 Requires: python3-core
 Provides: pypi(versioningit)
 Requires: pypi(packaging)
 
 %description python3
-python3 components for the versioningit package.
+python3 components for the pypi-versioningit package.
 
 
 %prep
@@ -81,7 +81,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1739545961
+export SOURCE_DATE_EPOCH=1739546343
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -117,8 +117,8 @@ ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/package-licenses/versioningit
-cp %{_builddir}/versioningit-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/versioningit/a2c18ee7239000151a61c10216115de210f7a16b || :
+mkdir -p %{buildroot}/usr/share/package-licenses/pypi-versioningit
+cp %{_builddir}/versioningit-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/pypi-versioningit/a2c18ee7239000151a61c10216115de210f7a16b || :
 python3 -m installer --destdir=%{buildroot} dist/*.whl
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -133,7 +133,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/versioningit/a2c18ee7239000151a61c10216115de210f7a16b
+/usr/share/package-licenses/pypi-versioningit/a2c18ee7239000151a61c10216115de210f7a16b
 
 %files python
 %defattr(-,root,root,-)
