@@ -7,7 +7,7 @@
 #
 Name     : pypi-versioningit
 Version  : 3.1.2
-Release  : 3
+Release  : 4
 URL      : https://files.pythonhosted.org/packages/5c/9b/941647e9e3616b5da7bbc4601ed9920f44a886704100fa8151406c07c149/versioningit-3.1.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/5c/9b/941647e9e3616b5da7bbc4601ed9920f44a886704100fa8151406c07c149/versioningit-3.1.2.tar.gz
 Summary  : Versioning It with your Version In Git
