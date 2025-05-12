@@ -1,5 +1,5 @@
 PKG_NAME := pypi-versioningit
-URL = https://files.pythonhosted.org/packages/5c/9b/941647e9e3616b5da7bbc4601ed9920f44a886704100fa8151406c07c149/versioningit-3.1.2.tar.gz
+URL = https://files.pythonhosted.org/packages/af/5b/8f4acd9a691755a20ee21fadab0045243e9aef3f5efcc0977c338c140eb5/versioningit-3.1.3.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
