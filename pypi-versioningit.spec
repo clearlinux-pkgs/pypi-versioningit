@@ -6,10 +6,10 @@
 # autospec commit: 65cf152
 #
 Name     : pypi-versioningit
-Version  : 3.2.0
-Release  : 6
-URL      : https://files.pythonhosted.org/packages/68/a1/c82cf222f215a2336a83e65d3054a235c238e204b20229be811db5da27e2/versioningit-3.2.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/68/a1/c82cf222f215a2336a83e65d3054a235c238e204b20229be811db5da27e2/versioningit-3.2.0.tar.gz
+Version  : 3.3.0
+Release  : 7
+URL      : https://files.pythonhosted.org/packages/89/f4/bc578cc80989c572231a36cc03cc097091176fa3fb8b4e2af1deb4370eb7/versioningit-3.3.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/89/f4/bc578cc80989c572231a36cc03cc097091176fa3fb8b4e2af1deb4370eb7/versioningit-3.3.0.tar.gz
 Summary  : Versioning It with your Version In Git
 Group    : Development/Tools
 License  : MIT
@@ -73,15 +73,15 @@ python3 components for the pypi-versioningit package.
 
 
 %prep
-%setup -q -n versioningit-3.2.0
-cd %{_builddir}/versioningit-3.2.0
+%setup -q -n versioningit-3.3.0
+cd %{_builddir}/versioningit-3.3.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1749650161
+export SOURCE_DATE_EPOCH=1751307114
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
